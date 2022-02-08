@@ -3,10 +3,15 @@ const hoursEl = document.getElementById("hours");
 const minsEl = document.getElementById("mins");
 const secondsEl = document.getElementById("seconds");
 
-const newYears = "1 jan 2023";
+const newDate = document.querySelector('[data-button]');
+
+function addNewDate() {
+    const input = document.querySelector('[data-input]');
+    const valor = input.value;
+}
 
 function countdown(){
-    const newYearsDate = new Date(newYears);
+    const newYearsDate = new Date(newDate);
     const currentDate = new Date();
 
     const totalSeconds = (newYearsDate - currentDate) / 1000;
@@ -27,3 +32,4 @@ function formatTime(time){
 }
 
 setInterval(countdown, 1000);
+console.log(input);
