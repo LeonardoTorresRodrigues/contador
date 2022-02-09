@@ -3,18 +3,17 @@ const hoursEl = document.getElementById("hours");
 const minsEl = document.getElementById("mins");
 const secondsEl = document.getElementById("seconds");
 
-const newDate = document.querySelector('[data-button]');
-
 function addNewDate() {
-    const input = document.querySelector('[data-input]');
+    const input = document.querySelector('#input');
     const valor = input.value;
+    return
 }
 
 function countdown(){
-    const newYearsDate = new Date(newDate);
+    const newDate = new Date(addNewDate);
     const currentDate = new Date();
 
-    const totalSeconds = (newYearsDate - currentDate) / 1000;
+    const totalSeconds = (newDate - currentDate) / 1000;
 
     const days = Math.floor(totalSeconds / 3600 / 24);
     const hours = Math.floor(totalSeconds / 3600) % 24;
@@ -32,4 +31,4 @@ function formatTime(time){
 }
 
 setInterval(countdown, 1000);
-console.log(input);
+//console.log(input);
