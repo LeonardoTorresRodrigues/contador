@@ -3,14 +3,8 @@ const hoursEl = document.getElementById("hours");
 const minsEl = document.getElementById("mins");
 const secondsEl = document.getElementById("seconds");
 
-function addNewDate() {
-    const input = document.querySelector('#input');
-    const valor = input.value;
-    return
-}
-
 function countdown(){
-    const newDate = new Date(addNewDate);
+    const newDate = new Date();
     const currentDate = new Date();
 
     const totalSeconds = (newDate - currentDate) / 1000;
@@ -31,4 +25,3 @@ function formatTime(time){
 }
 
 setInterval(countdown, 1000);
-//console.log(input);
