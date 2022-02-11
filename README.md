@@ -1,2 +1,2 @@
 # contador
-O usuário insere um dia e hora para o contador iniciar.
+O usuário insere um ano, mês e dia para o contador se iniciar.
