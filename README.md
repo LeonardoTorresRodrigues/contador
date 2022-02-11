@@ -1,2 +1,2 @@
 # contador
-Contador para o ano novo
+O usuário insere um ano, mês e dia para o contador se iniciar.
