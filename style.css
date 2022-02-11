@@ -5,6 +5,7 @@
 }
 
 body{
+    background-color: #FFF3E1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,4 +39,57 @@ h1{
 
 .countdown-el span{
     font-size: 1.5rem;
+}
+
+.input-container{
+    border: 0.25rem black solid;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem;
+    background-color: #F6F1EF;
+}
+
+input{
+    font-size: 1rem;
+    text-align: center;
+    border: 0.05rem black solid;
+    border-radius: 0.5rem;
+    background: #F6F1D1;
+}
+
+button{
+    font-size: 1rem;
+    border: 0.05rem black solid;
+    border-radius: 0.5rem; 
+    font-family: 'Poppins';
+    background: #F6F1D1;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+button:hover{
+    border-color: #C78C19;
+}
+
+button:active{
+    border-color: #088C19;
+
+}
+
+@media screen and (max-width: 480px){
+    .countdown-container{
+        display: inline;
+    }
+
+    .input-container{
+        justify-content: center;
+        text-align: center;
+        font-size: 0.5rem;
+        padding: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    input, button{
+        font-size: 1.5rem;
+    }
 }
