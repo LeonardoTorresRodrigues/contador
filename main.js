@@ -5,6 +5,8 @@ function initiateCountdown(){
     const minsEl = document.getElementById("mins");
     const secondsEl = document.getElementById("seconds");
 
+    let erro = "";
+
     function countdown(){
         const year = document.getElementById('year');
         const yearValue = year.value;
@@ -22,6 +24,16 @@ function initiateCountdown(){
         const hours = Math.floor(totalSeconds / 3600) % 24;
         const mins = Math.floor(totalSeconds / 60) % 60;
         const seconds = Math.floor(totalSeconds) % 60;
+
+        if(yearValue < currentDate.getFullYear()){
+            erro = "Ano inválido";
+        } else if(yearValue == currentDate.getFullYear() && monthValue < currentDate.getMonth() + 1){
+            erro = "Mês inválido";
+        } else if(yearValue == currentDate.getFullYear() && monthValue == currentDate.getMonth() + 1 && dayValue <= currentDate.getDate()){
+            erro = "Dia inválido";
+        }
+
+        console.log(erro)
 
         daysEl.innerHTML = days;
         hoursEl.innerHTML = formatTime(hours);
