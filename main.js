@@ -5,8 +5,6 @@ function initiateCountdown(){
     const minsEl = document.getElementById("mins");
     const secondsEl = document.getElementById("seconds");
 
-    let erro = "";
-
     function countdown(){
         const year = document.getElementById('year');
         const yearValue = year.value;
@@ -26,14 +24,21 @@ function initiateCountdown(){
         const seconds = Math.floor(totalSeconds) % 60;
 
         if(yearValue < currentDate.getFullYear()){
-            erro = "Ano inválido";
-        } else if(yearValue == currentDate.getFullYear() && monthValue < currentDate.getMonth() + 1){
-            erro = "Mês inválido";
-        } else if(yearValue == currentDate.getFullYear() && monthValue == currentDate.getMonth() + 1 && dayValue <= currentDate.getDate()){
-            erro = "Dia inválido";
+            document.getElementById('text-error').innerHTML = "Ano inválido";
+            document.getElementById('error').style.display = 'block';
+            document.getElementById('countdown-container').style.display = 'none';
+            document.getElementById('rest').style.display = 'none';
+        } else if(yearValue == currentDate.getFullYear() && monthValue < currentDate.getMonth() + 1 | monthValue > 12){
+            document.getElementById('text-error').innerHTML = "Mês inválido";
+            document.getElementById('error').style.display = 'block';
+            document.getElementById('countdown-container').style.display = 'none';
+            document.getElementById('rest').style.display = 'none';
+        } else if(yearValue == currentDate.getFullYear() && monthValue == currentDate.getMonth() + 1 && dayValue <= currentDate.getDate() | dayValue > 31){
+            document.getElementById('text-error').innerHTML = "Dia inválido";
+            document.getElementById('error').style.display = 'block';
+            document.getElementById('countdown-container').style.display = 'none';
+            document.getElementById('rest').style.display = 'none';
         }
-
-        console.log(erro)
 
         daysEl.innerHTML = days;
         hoursEl.innerHTML = formatTime(hours);
