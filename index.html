@@ -19,9 +19,14 @@
         <button onclick="initiateCountdown()">Enviar</button>
     </div>
 
-    <h2>Faltam</h2>
+    <div id="error" class="error">
+        <p id="text-error">Data inválida</p>
+        <button onclick="location.reload()">Colocar nova data</button>
+    </div>
 
-    <div class="countdown-container">
+    <h2 id="rest" class="rest">Faltam</h2>
+
+    <div id="countdown-container" class="countdown-container">
         <div class="countdown-el days-c">
             <p class="text" id="days">0</p>
             <span>dias</span>
