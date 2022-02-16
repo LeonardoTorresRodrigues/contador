@@ -54,10 +54,20 @@ button:active{
 
 }
 
-h2{
+.error{
+    background-color: rgb(133, 42, 42);
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: black;
+    border-radius: 0.5rem;
+    display: none;
+    text-align: center;
+}
+
+.rest{
     font-weight: normal;
     font-size: 3rem;
-    margin-top: 4.5rem;
+    margin-top: 0.5rem;
 }
 
 .countdown-container{
@@ -100,7 +110,7 @@ h2{
         font-size: 1.5rem;
     }
 
-    h2{
+    .rest{
         font-size: 1.5rem;
     }
 
