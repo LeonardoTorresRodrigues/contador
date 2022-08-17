@@ -1,4 +1,7 @@
 # Contador
+
+Clique aqui para acessar o contador: https://leonardotorresrodrigues.github.io/contador/
+
 O usuário insere um ano, mês e dia...
 
 ![Captura de Tela (104)](https://user-images.githubusercontent.com/91892938/154768972-1ec69b55-3305-43b7-8934-5fa1044867ad.png)
@@ -16,3 +19,5 @@ Erros de fácil entendimento...
 Brinque e divirta-se cololcando datas diversas...
 
 https://user-images.githubusercontent.com/91892938/154770042-f43d4e81-071f-4f92-9cc9-eb1705bdf380.mp4
+
+_Projeto feito para fins de estudo e pratica de HTML5, CSS3 e javaScript._
