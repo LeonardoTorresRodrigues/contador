@@ -38,3 +38,7 @@ Projeto feito para fins de estudo e pratica de:
 * HTML5
 * CSS3
 * JavaScript._
+
+# Em breve :construction:
+
+- Página em React
